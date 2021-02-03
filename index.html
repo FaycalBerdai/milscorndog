@@ -11,41 +11,46 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <div class="col s2">
-        <a id="logo-container" href="#" class="brand-logo" style="width: auto; height: auto; max-width: 100%; max-height: 100%;">
-          MILS
-        </a>
+  <div class="navbar-fixed">
+    <nav class="grey darken-4" role="navigation">
+      <div class="nav-wrapper container">
+        <div class="row">
+          <div class="col s1">
+            <img class="responsive-img" src="media/logo_white.png"  alt="" width="100%" height="100%">
+          </div>
+          <div class="col s2" >
+            <a id="logo-container" href="#" class="brand-logo" style="width: auto; height: auto; max-width: 100%; max-height: 100%;">
+              MIL'S Corn Dogs
+            </a>
+          </div>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#livraison">Livraison</a></li>
+            <li><a href="#gallerie">Gallerie</a></li>
+          </ul>
+
+          <ul id="nav-mobile" class="sidenav">
+            <li><a href="#">A faire</a></li>
+          </ul>
+        </div>
+
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       </div>
-
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+    </nav>
+  </div>
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">Mil's Fresh Corn Dogs</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Découvrez de nouvelles saveurs</h5>
-        </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+          <img src="media/logo.png" alt="" class="circle responsive-img" width="30%" height="30%">
+          <h4 class="header col s12 light" style="padding-top:50px;padding-bottom:0px"><b>Découvrez de nouvelles saveurs</b></h4>
         </div>
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="media/background1.jpg" alt="Unsplashed background img 1" ></div>
   </div>
 
 
@@ -94,7 +99,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="media/background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
@@ -103,8 +108,14 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <a id="gallerie"><h4>Gallerie</h4></a>
+          <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="media/logo.png"></a>
+            <a class="carousel-item" href="#two!"><img src="media/logo.png"></a>
+            <a class="carousel-item" href="#three!"><img src="media/logo.png"></a>
+            <a class="carousel-item" href="#four!"><img src="media/logo.png"></a>
+            <a class="carousel-item" href="#five!"><img src="media/logo.png"></a>
+          </div>
         </div>
       </div>
 
@@ -116,14 +127,30 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">Vous souhaitez savourer un délicieux Corn Dog à la maison? La livraison est prise en charge !</h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="media/background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
-  <footer class="page-footer teal">
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <a id="livraison"></a><h4>Livraison</h4></a>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="page-footer grey darken-4">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -154,7 +181,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Appify using Materialize</a>
       </div>
     </div>
   </footer>
@@ -165,5 +192,25 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems);
+  });
+  </script>
+
   </body>
+  <style>
+    .parallax img{
+      max-height: 180%;
+      max-width: 180%;
+    }
+    .responsive-img{
+      max-width: 10%;
+        max-height: 10%;
+    }
+    a:link {
+   color:inherit;
+}
+  </style>
 </html>
