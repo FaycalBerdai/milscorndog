@@ -64,14 +64,3 @@ footer.page-footer {
   max-width: 10%;
     max-height: 10%;
 }
-a:link {
-color:inherit;
-}
-
-html {
-  font-family: "Lucida Console", Courier, monospace;
-}
-
-nav {
-  font-family: "Helvetica", serif;
-}

@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="shortcut icon" href="media/logo_icon.ico" />
+  <link rel="shortcut icon" href="media/logo/logo_icon.ico" />
   <title>Mil's Corn Dogs</title>
 
   <!-- CSS  -->
@@ -11,13 +11,14 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
+
 <body class="grey lighten-3">
   <div class="navbar-fixed">
     <nav class="grey darken-4" role="navigation">
       <div class="nav-wrapper container ">
         <div class="row">
           <div class="col s1">
-            <img class="responsive-img" src="media/logo_white.png"  alt="" width="100%" height="100%">
+            <img class="responsive-img" src="media/logo/logo_white.png"  alt="" width="100%" height="100%">
           </div>
           <div class="col s2" >
             <a id="logo-container" href="#debut" class="brand-logo  grey-text text-lighten-3" style="width: auto; height: auto; max-width: 100%; max-height: 100%;">
@@ -25,13 +26,15 @@
             </a>
           </div>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#livraison">Livraison</a></li>
+            <li><a href="#debut">Accueil</a></li>
             <li><a href="#gallerie">Gallerie</a></li>
+            <li><a href="#livraison">Livraison</a></li>
           </ul>
 
           <ul id="nav-mobile" class="sidenav">
-            <li><a href="#livraison">Livraison</a></li>
+            <li><a href="#debut">Accueil</a></li>
             <li><a href="#gallerie">Gallerie</a></li>
+            <li><a href="#livraison">Livraison</a></li>
           </ul>
         </div>
 
@@ -45,14 +48,14 @@
       <div class="container">
         <br><br>
         <div id="debut" class="row center section scrollspy">
-          <img src="media/logo.png" alt="" class="circle responsive-img" width="30%" height="30%">
+          <img src="media/logo/logo.png" alt="" class="circle responsive-img" width="30%" height="30%">
           <h4 class="header col s12 light" style="padding-top:50px;padding-bottom:0px"><b>Découvrez de nouvelles saveurs</b></h4>
         </div>
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="media/background1.jpg" alt="Unsplashed background img 1" ></div>
+    <div class="parallax"><img src="media/parallax_bg/background1.jpg" alt="Unsplashed background img 1" ></div>
   </div>
 
 
@@ -101,7 +104,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="media/background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="media/parallax_bg/background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
@@ -111,12 +114,13 @@
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <div id="gallerie" class="section scrollspy"><h4>Gallerie</h4></div>
-          <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="media/logo.png"></a>
-            <a class="carousel-item" href="#two!"><img src="media/logo.png"></a>
-            <a class="carousel-item" href="#three!"><img src="media/logo.png"></a>
-            <a class="carousel-item" href="#four!"><img src="media/logo.png"></a>
-            <a class="carousel-item" href="#five!"><img src="media/logo.png"></a>
+          <div class="carousel center">
+            <a class="carousel-item z-depth-5" href="#one!"><img class="materialboxed" width="350" src="media/carousel/CORNDOG-1.jpg"></a>
+            <a class="carousel-item z-depth-5" href="#two!"><img class="materialboxed" width="350" src="media/carousel/CORNDOG-2.jpg"></a>
+            <a class="carousel-item z-depth-5" href="#three!"><img class="materialboxed" width="350" src="media/carousel/CORNDOG-3.jpg"></a>
+            <a class="carousel-item z-depth-5" href="#four!"><img class="materialboxed" width="350" src="media/carousel/CORNDOG-4.jpg"></a>
+            <a class="carousel-item z-depth-5" href="#five!"><img class="materialboxed" width="350" src="media/carousel/CORNDOG-5.jpg"></a>
+            <a class="carousel-item z-depth-5" href="#six!"><img class="materialboxed" width="350" src="media/carousel/CORNDOG-6.jpg"></a>
           </div>
         </div>
       </div>
@@ -133,7 +137,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="media/background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="media/parallax_bg/background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
 
@@ -203,6 +207,10 @@
     var elems = document.querySelectorAll('.scrollspy');
     var instances = M.ScrollSpy.init(elems);
   });
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems);
+  });
   </script>
 
   </body>
@@ -219,6 +227,12 @@
 }
 a:link {
 color:inherit;
+}
+
+.carousel{
+  width: 200%;
+  margin-top: -10%;
+  margin-left: -55%;
 }
 
 </style>
