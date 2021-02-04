@@ -28,13 +28,13 @@
           </div>
           <ul class="right hide-on-med-and-down">
             <li><a href="#debut">Accueil</a></li>
-            <li><a href="#gallerie">Gallerie</a></li>
+            <li><a href="#galerie">Galerie</a></li>
             <li><a href="#livraison">Livraison</a></li>
           </ul>
 
           <ul id="nav-mobile" class="sidenav">
-            <li><a href="#debut">Accueil</a></li>
-            <li><a href="#gallerie">Gallerie</a></li>
+            <li><a href="#debut" >Accueil</a></li>
+            <li><a href="#galerie">Galerie</a></li>
             <li><a href="#livraison">Livraison</a></li>
           </ul>
         </div>
@@ -114,7 +114,7 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <div id="gallerie" class="section scrollspy"><h4>Gallerie</h4></div>
+          <div id="galerie" class="section scrollspy"><h4>Galerie</h4></div>
           <div class="carousel center">
             <a class="carousel-item " href="#one!"><img class="materialboxed responsive-img" width="350" src="media/carousel/CORNDOG-1.jpg"></a>
             <a class="carousel-item " href="#two!"><img class="materialboxed responsive-img" width="350" src="media/carousel/CORNDOG-2.jpg"></a>
@@ -212,6 +212,10 @@
     var elems = document.querySelectorAll('.materialboxed');
     var instances = M.Materialbox.init(elems);
   });
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
   </script>
 
   </body>
@@ -224,7 +228,7 @@
 }
 #logo{
   max-width: 30%;
-    max-height: 30%;
+  max-height: 30%;
 }
 a:link {
 color:inherit;
