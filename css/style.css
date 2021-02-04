@@ -55,3 +55,23 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.parallax img{
+  max-height: 180%;
+  max-width: 180%;
+}
+.responsive-img{
+  max-width: 10%;
+    max-height: 10%;
+}
+a:link {
+color:inherit;
+}
+
+html {
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+nav {
+  font-family: "Helvetica", serif;
+}
