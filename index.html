@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
 </head>
 
 <body class="grey lighten-3">
@@ -23,7 +25,7 @@
           </div>
           <div class="col s2 hide-on-small-and-down" >
             <a id="logo-container" href="#debut" class="brand-logo  grey-text text-lighten-3" style="width: auto; height: auto; max-width: 100%; max-height: 100%;">
-              Mil's Corn Dogs
+              MIL'S Corn Dogs
             </a>
           </div>
           <ul class="right hide-on-med-and-down">
@@ -113,7 +115,7 @@
             <h3 class="center brown-text"><i class="material-icons">timer</i></h3>
             <h6 class="center">Frais et prêt en 5 minutes</h6>
 
-            <p style="font-size: x-small;" class="light">Nos produits, élaborés à partir d'ingrédients frais et sélectionnés pour garantir votre satisfaction, sont préparés devant vous en 5 minutes montre en main!</p>
+            <p id="text-carousel" class="light">Nos produits, élaborés à partir d'ingrédients frais et sélectionnés pour garantir votre satisfaction, sont préparés devant vous en 5 minutes montre en main!</p>
           </div>
         </div>
       </a>
@@ -123,7 +125,7 @@
             <h3 class="center brown-text"><i class="material-icons">local_dining</i></h3>
             <h6 class="center">Une variété de saveurs</h6>
 
-            <p style="font-size: x-small;" class="light">Vous pouvez composer votre corn dog selon vos goûts ! Choisissez votre saucisse, vos sauces et vos toppings, et faites plaisir à vos papilles !</p>
+            <p id="text-carousel" class="light">Vous pouvez composer votre corn dog selon vos goûts ! Choisissez votre saucisse, vos sauces et vos toppings, et faites plaisir à vos papilles !</p>
           </div>
         </div>
       </a>
@@ -133,7 +135,7 @@
             <h3 class="center brown-text"><i class="material-icons">mood</i></h3>
             <h6 class="center">Faciles à manger</h6>
 
-            <p style="font-size: x-small;" class="light">Les corn dogs sont des saucisses en pâte sur bâtonnet, fournis avec un étui fait sur mesure, pour permettre de se déplacer facilement avec, mais également de le manger en marchant ou assis avec vos amis !</p>
+            <p id="text-carousel" class="light flow-text">Les corn dogs sont des saucisses en pâte sur bâtonnet, fournis avec un étui fait sur mesure, pour permettre de se déplacer facilement avec, mais également de le manger en marchant ou assis avec vos amis !</p>
           </div>
         </div>
       </div>
@@ -289,8 +291,14 @@ color:inherit;
   margin-left: -50%;
 }
 
+#text-carousel{
+  font-size: x-small;
+  line-height: 2.4em;
+}
+
 html,body {
-  overflow-x: hidden
+  overflow-x: hidden;
+  font-family: "Sriracha", cursive;
 }
 
 
