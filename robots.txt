@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /css/
+Disallow: /media/
+Disallow: /js/
+
+Sitemap: https://www.milscorndog.ma/sitemap.xml
